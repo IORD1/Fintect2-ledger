@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Firebase Hosting</title>
-
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -32,7 +31,45 @@
       <h1>You are logged in</h1>
       <h2 id="name">You name</h2>
     </section>
-
-    
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+    <h1>Hello hitesh</h1>
+    <div class="afterlogin">
+      <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>This is heading</h1>
+    <p>
+       | #{content}
+    </p>
+    <form action="/" method="post" id="contact">
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <input type="text" name="age" id="age" placeholder="Enter your age">
+        <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+        <button class="btn">Submit</button>
+    </form>
+    </div>
   </body>
 </html>
