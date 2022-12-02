@@ -1,1 +1,1 @@
-{"name":"Hitesh","age":" 20","gender":"Male"}
+{"username":"Hitesh","email":"hiteshjainhd@gmail.com","password":"hitesh_89020"}

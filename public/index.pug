@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.14.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-remote-config-compat.js"></script>
+
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script type='module' src="index.js"></script>
+    
+  </head>
+  <body>
+    <section id="whenSignedOut" >
+      <button id="googleBtn">SignIn</button>
+      <h1>Abe Login to Karr...</h1>
+    </section>
+
+    <section id="whenSignedIn" hidden="true">
+      <button id="signout">SignOut</button>
+      <h1>You are logged in</h1>
+      <h2 id="name">You name</h2>
+    </section>
+    <h1>Hello hitesh</h1>
+  </body>
+</html>
